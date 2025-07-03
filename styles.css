@@ -1,0 +1,133 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #f9f6f1;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    border-bottom: 6px double #c2b280;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Impact', 'Georgia', serif;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 8px 0 0 0;
+    font-style: italic;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 32px 28px 24px 28px;
+}
+
+h2 {
+    color: #bfa14a;
+    border-bottom: 2px solid #e0c97f;
+    padding-bottom: 6px;
+    margin-top: 32px;
+}
+
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.coluna {
+    flex: 1 1 260px;
+    min-width: 260px;
+}
+
+.classificados,
+.horoscopo,
+.opiniao {
+    background: #f7ecd0;
+    border-radius: 8px;
+    padding: 18px 16px;
+    margin-top: 24px;
+}
+
+.classificados h3,
+.horoscopo h3,
+.opiniao h3 {
+    color: #bfa14a;
+    margin-top: 0;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    margin-top: 40px;
+    border-top: 6px double #c2b280;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 12px 4px;
+    }
+
+    .colunas {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.card-fly {
+    position: relative;
+    background: #fffbe6;
+    border-left: 6px solid #bfa14a;
+    box-shadow: 0 4px 18px rgba(191,161,74,0.13);
+    padding: 16px 20px 16px 16px;
+    margin: 18px 0 24px 0;
+    border-radius: 12px;
+    font-size: 1.08em;
+    animation: fly 2.5s ease-in-out infinite alternate;
+    z-index: 2;
+    display: block;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-height: 48px;
+}
+.card-fly strong {
+    color: #bfa14a;
+}
+.card-fly-hide {
+    display: none !important;
+}
+.icon-card {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    background: #f7ecd0;
+    box-shadow: 0 2px 8px #e0c97f;
+    padding: 3px;
+    border: 1.5px solid #e0c97f;
+}
+@keyframes fly {
+    0% { transform: translateY(0px) scale(1); box-shadow: 0 4px 18px rgba(191,161,74,0.13); }
+    50% { transform: translateY(-12px) scale(1.03); box-shadow: 0 12px 32px rgba(191,161,74,0.18); }
+    100% { transform: translateY(0px) scale(1); box-shadow: 0 4px 18px rgba(191,161,74,0.13); }
+}
