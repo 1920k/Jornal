@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papiro News - Edição Especial</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
    
 </head>
 
@@ -162,25 +163,25 @@
             <li>Tutancâmon abre canal de ASMR com sons de sarcófago</li>
             <li>Descubra seu signo egípcio e qual deus te bloqueou no Orkut do Além</li>
         </ul>
+        <hr>
+        <h3>Referências e Fontes Consultadas</h3>
+        <p class="referencias-intro">
+            Para a elaboração desta edição especial do Papiro News, nossa equipe de reportagem recorreu a acervos históricos, publicações acadêmicas e portais de referência reconhecidos internacionalmente. Confira abaixo as principais fontes utilizadas para apuração e checagem das informações:
+        </p>
+        <ul class="referencias">
+            <li>Obra "Mistérios do Antigo Egito", disponível no acervo digital do Museu Egípcio Virtual.<br><em>"Após horas de pesquisa, encontramos detalhes surpreendentes!", relata o repórter-chefe.</em></li>
+            <li>Artigo "Tecnologia e Sociedade no Vale do Nilo", publicado na Revista Papiro Digital, edição 2024.<br><em>"Fontes ouvidas pela redação confirmam: o Egito era mesmo inovador", destaca a editora de ciência.</em></li>
+            <li>Enciclopédia colaborativa <a href="https://pt.wikipedia.org/wiki/Egito_Antigo" target="_blank">Wikipedia – Egito Antigo</a>, acesso em julho de 2025.<br><em>"Consultamos especialistas e cruzamos dados para garantir a veracidade", afirma o setor de checagem.</em></li>
+            <li>Estudo "A História dos Escribas", do Instituto de Estudos Hieroglíficos.<br><em>"Em contato com pesquisadores, apuramos curiosidades inéditas sobre os escribas", comenta a repórter especial.</em></li>
+            <li>Reportagem "Senet: O Jogo dos Faraós", veiculada na revista Arqueologia Hoje.<br><em>"Direto das escavações, nossa equipe acompanhou de perto as descobertas", diz o enviado ao Egito.</em></li>
+            <li>Pesquisa "Gatos e Deuses: Bastet e o Egito", publicada na Enciclopédia dos Animais Sagrados.<br><em>"Entre uma pauta e outra, flagramos Bastet em destaque nas fontes históricas", brinca a colunista de cultura.</em></li>
+        </ul>
     </div>
     <footer>
         © 2025 Papiro News. Todos os direitos reservados.<br>
-        Redação: Vale do Nilo, bloco B, sala 3.1
+        Redação: Vale do Nilo, 1°, sala 12
     </footer>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('.show-card').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                var target = link.getAttribute('data-target');
-                var card = document.getElementById('card-' + target);
-                if(card) {
-                    card.classList.toggle('card-fly-hide');
-                }
-            });
-        });
-    });
-    </script>
+ 
 </body>
 
 </html>
